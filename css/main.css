@@ -1,0 +1,68 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body{
+     font-family: sans-serif;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+}
+.container{
+     display: flex;
+     width: 85vw;
+}
+.container .panel:nth-child(1){
+     background-image: url("../images/StiveJobs.jpg");
+}
+.container .panel:nth-child(2){
+     background-image: url("../images/BillGates.jpg");
+}
+.container .panel:nth-child(3){
+     background-image: url("../images/IlonMask.jpg");
+}
+.container .panel:nth-child(4){
+     background-image: url("../images/markZuucerburg.jpg");
+}
+.container .panel:nth-child(5){
+     background-image: url("../images/JeffBezos.jpg");
+}
+.container .panel:nth-child(6){
+     background-image: url("../images/JeckMaa.jpg");
+}
+.container .panel:nth-child(7){
+     background-image: url("../images/PavelDurov.jpg");
+}
+.panel{
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 80vh;
+     border-radius: 5px;
+     color: #fff;
+     cursor: pointer;
+     flex: 1;
+     margin: 10px;
+     position: relative;
+     transition: all 0.8s ease-in;
+
+}
+.panel h3{
+     position: absolute;
+     left: 50px;
+     bottom: 50px;
+     font-size: 24px;
+     opacity: 0;
+     
+}
+
+.panel.active{
+     flex: 5;
+}
+.panel.active h3{
+     opacity: 1;
+     transition: opacity 0.3s ease-in 0.4s;
+}
